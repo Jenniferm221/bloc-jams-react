@@ -27,11 +27,20 @@ class Album extends Component {
       </section>
       <table id ="song-list">
         <colgroup>
-          <col id="song-number-column" />
-          <col id="song-title-column" />
-          <col id="song-duration-column" />
+          <col id="song-number-column"/>
+          <col id="song-title-column"/>
+          <col id="song-duration-column"/>
         </colgroup>
         <tbody>
+          {
+            this.state.album.songs.map(( songs, index) =>
+              <Link to={`/audioSrc/${album.audioSrc.slug}`} key={index}>
+                <td id="song-number">{this.state.album.songs.length}</td>
+                <td id="song-title">{this.state.album.songs.title}</td>
+                <td id="song-duration">{this.state.album.somgs.duration}</td>
+              </Link>
+              )
+          }
         </tbody>
       </table>
     </section>
