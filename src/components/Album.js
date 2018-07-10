@@ -16,7 +16,7 @@ class Album extends Component {
   render() {
     return (
       <section className="album">
-        {this.props.match.params.slug} Album will go here
+        {this.props.match.params.slug}
         <section id="album-info">
           <img id="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title}/>
         <div className="album-details">
@@ -27,18 +27,18 @@ class Album extends Component {
       </section>
       <table id ="song-list">
         <colgroup>
-          <col id="song-number-column"/>
-          <col id="song-title-column"/>
-          <col id="song-duration-column"/>
+          <col id="song-number-column"/>Track
+          <col id="song-title-column"/>Title
+          <col id="song-duration-column"/>Duration
         </colgroup>
         <tbody>
           {
             this.state.album.songs.map(( songs, index) =>
-              <Link to={`/audioSrc/${album.audioSrc.slug}`} key={index}>
-                <td id="song-number">{this.state.album.songs.length}</td>
-                <td id="song-title">{this.state.album.songs.title}</td>
-                <td id="song-duration">{this.state.album.somgs.duration}</td>
-              </Link>
+              <tr key={index}>
+                <td id="song-number">{index + 1}</td>
+                <td id="song-title">{songs.title}</td>
+                <td id="song-duration">{songs.duration}</td>
+              </tr>
               )
           }
         </tbody>
