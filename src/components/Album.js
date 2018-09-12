@@ -66,7 +66,6 @@ songRowButtons(song, index) {
 
 }
 
-
   render() {
     return (
       <section className="album">
