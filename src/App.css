@@ -1,3 +1,24 @@
+body {
+background-image: url('https://i.imgur.com/yJUTkgR.png?1');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+{
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'orange juice';
+    src: url(components/Layout/fonts/orange_juice.ttf);
+}
+
+@font-face {
+    font-family: 'BaltimoreTypewriter';
+    src: url(components/Layout/fonts/BaltimoreTypewriter.ttf);
+}
+
 .App {
   text-align: center;
 }
@@ -14,15 +35,47 @@
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+.title {
+  font-size: 500%;
+  font-family: 'orange juice';
+  color: black;
+  font-stretch: expanded;
+  text-shadow:
+		-2px -2px 0 white,
+		2px -2px 0 white,
+		-2px 2px 0 white,
+		2px 2px 0 white;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+.navbar {
+    list-style-type: none;
+    font-family: 'orange juice';
+    font-size: 150%;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(50, 14, 59, 0.40);
+}
+
+
+.navlinks a {
+    font-family: 'orange juice';
+    font-size: 150%;
+    display: inline-block;
+    color: #71ccb9;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navlinks a:hover {
+    font-family: 'orange juice';
+    font-size: 150%;
+    background-color: #320e3b;
+    color: #ffc914;
 }

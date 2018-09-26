@@ -1,0 +1,28 @@
+
+.landing {
+  font-family: "arial";
+  font-size: 300;
+  color: white;
+  font-stretch: expanded;
+  text-shadow:
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selling-points{
+  font-family: "arial";
+  font-size: 300;
+  font-stretch: expanded;
+  text-shadow:
+		-3px -3px 0 black,
+		3px -3px 0 black,
+		-3px 3px 0 black,
+		3px 3px 0 black;
+  margin-left: auto;
+  margin-right: auto;
+
+}

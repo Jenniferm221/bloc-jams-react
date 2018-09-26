@@ -1,0 +1,74 @@
+.album-cover-art {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center
+}
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-style: outset;
+  border-color: white;
+  font-style: 'arial';
+  color: white;
+  font-size: 150%;
+  table-layout: fixed;
+  font-size: 300%;
+  font-family: sans-serif;
+  width:40%;
+  white-space:normal;
+}
+
+
+.ion-volume-low,
+.ion-volume-high {
+  font-size: 350%;
+  margin: 2%;
+}
+
+@media (min-width: 900px) {
+  .ion-volume-low,
+  .ion-volume-high {
+    font-size: 550%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ion-volume-low,
+  .ion-volume-high {
+    font-size: 600%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ion-volume-low,
+  .ion-volume-high {
+    font-size: 800%;
+  }
+}
+
+button,
+.seek-bar {
+  font-size: 150%;
+}
+
+@media (min-width: 900px) {
+  button,
+  .seek-bar {
+    font-size: 200%;
+  }
+}
+
+@media (min-width: 1200px) {
+  button .seek-bar {
+    font-size: 300%;
+  }
+}
+@media (min-width: 1800px) {
+  button {
+    font-size: 400%;
+  }
+}
