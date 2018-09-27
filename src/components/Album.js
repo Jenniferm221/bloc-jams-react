@@ -165,7 +165,7 @@ handleVolumeChange (e) {
               <tr className="song" key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.handleSongHover(index)} onMouseLeave={() => this.handleSongHover(null)} >
                 <td id="song-number">{this.songRowButtons(song, index)}</td>
                 <td id="song-title">{song.title}</td>
-                <td id="song-duration">{ this.formatTime(song.duration) }</td>
+                <td id="song-duration" className="duration">{ this.formatTime(song.duration) }</td>
               </tr>
               )
           }

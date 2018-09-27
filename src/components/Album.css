@@ -72,3 +72,8 @@ button,
     font-size: 400%;
   }
 }
+
+.total-time {
+  color: white;
+  font-size: 200%;
+}
